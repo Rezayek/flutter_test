@@ -1,0 +1,3 @@
+class LocationExceptionFailedToGetLocation implements Exception{}
+class LocationExceptionFailedToSendLocation implements Exception{}
+class LocationExceptionFailedToRecieveLocation implements Exception{}
