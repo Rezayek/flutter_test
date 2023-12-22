@@ -9,6 +9,7 @@ class InputWidget extends StatefulWidget {
   final String inputName;
   final EdgeInsetsGeometry? margin;
   final int? maxLines;
+  final TextInputType? keyboardType;
   const InputWidget(
       {super.key,
       required this.height,
@@ -16,6 +17,7 @@ class InputWidget extends StatefulWidget {
       required this.controller,
       required this.inputName,
       this.margin,
+      this.keyboardType = TextInputType.text,
       this.maxLines});
 
   @override
@@ -44,7 +46,7 @@ class _InputWidgetState extends State<InputWidget> {
           TextFormField(
             maxLines: widget.maxLines,
             controller: widget.controller,
-            keyboardType: TextInputType.text,
+            keyboardType: widget.keyboardType,
             decoration: const InputDecoration(
                 border: OutlineInputBorder(),
                 counterText: '',

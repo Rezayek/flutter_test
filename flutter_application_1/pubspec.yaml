@@ -53,6 +53,8 @@ dependencies:
   url_launcher: ^6.1.11
   firebase_core: ^2.20.0
   cloud_firestore: ^4.12.1
+  http: ^0.13.6
+  firebase_auth: ^4.12.1
 
 flutter_native_splash:
   color: "#ffffff"

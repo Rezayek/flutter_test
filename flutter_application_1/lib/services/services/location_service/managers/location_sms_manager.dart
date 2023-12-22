@@ -35,11 +35,11 @@ class LocationSMSManager {
     _recieveLocationRequestListener();
   }
 
-  Future sendLocationRquest(String phoneNumber) async {
+  Future<void> sendLocationRquest(String phoneNumber) async {
     if (await _requestPrmission()) {
-      debug.log("send loc");
-      await _smsManager.sendSms(to: phoneNumber, message: "location");
-      debug.log("send loc-------");
+      await _smsManager.sendSms(to: phoneNumber, message: "location",statusListener: (status) {
+        debug.log(status.name);
+      },).onError((error, stackTrace) => debug.log(error.toString()));
     }
   }
 

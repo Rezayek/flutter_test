@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/services/services/location_service/managers/location_sms_manager.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:telephony/telephony.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 import 'app_router/app_router.dart';

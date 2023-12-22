@@ -17,4 +17,11 @@ class PositionData {
         description = snapshot.get('description'),
         longitude = snapshot.get('longitude'),
         latitude = snapshot.get('latitude');
+
+
+  PositionData.fromUrl(Map<String, dynamic> snapshot)
+      : id = "0",
+        description = snapshot['description'],
+        longitude = snapshot['longitude'],
+        latitude = snapshot['latitude'];
 }

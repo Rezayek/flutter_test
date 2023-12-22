@@ -101,7 +101,7 @@ class _LocationBestState extends State<LocationBest> {
             InputWidget(
               height: 12.5.h,
               width: 85.w,
-              controller: _latController,
+              controller: _longController,
               inputName: "longtitude",
               margin: EdgeInsets.only(
                   top: 0.75.h, bottom: 1.h, left: 4.w, right: 4.w),

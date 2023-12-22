@@ -1,14 +1,13 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter_application_1/services/data/position_data.dart';
-import 'package:flutter_application_1/services/services/friend_services/friend_services.dart';
-import 'package:flutter_application_1/services/services/friend_services/position_services.dart';
+import 'package:flutter_application_1/services/services/best_location_services/position_services.dart';
 
 import '../../services/location_service/managers/location_manager.dart';
 import 'friend_event.dart';
 import 'friend_state.dart';
 
 class FriendBloc extends Bloc<FriendEvent, FriendState> {
-  FriendBloc(FriendsService friendsService, PositionService positionService)
+  FriendBloc( PositionService positionService)
       : super(const FriendStateInit(isLoading: false)) {
     on<FriendEventInit>(
       (event, emit) async{

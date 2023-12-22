@@ -9,7 +9,7 @@ class LocationService {
     await _locationManager.requestLocationPermission();
   }
 
-  void sendRequest(String phoneNumber) async {
+  Future<void>  sendRequest(String phoneNumber) async {
     await _locationSmsManager.sendLocationRquest(phoneNumber);
   }
 

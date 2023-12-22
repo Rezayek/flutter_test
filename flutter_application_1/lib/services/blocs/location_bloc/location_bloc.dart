@@ -12,7 +12,7 @@ class LocationBloc extends Bloc<LocationEvent, LocationState> {
     });
     on<LocationEventProcessRequestLocation>((event, emit) async {
       emit(const LocationStateInit(isLoading: true));
-      locationService.sendRequest('${event.dialCode}+${event.phoneNumber}');
+      await locationService.sendRequest('${event.dialCode}+${event.phoneNumber}');
       emit(const LocationStateInit(isLoading: false));
     });
   }

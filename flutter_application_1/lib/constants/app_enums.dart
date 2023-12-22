@@ -11,3 +11,10 @@ enum SmsCurrentStatus {
   sended,
   fail,
 }
+
+enum UpdateChat {
+  none,
+  all,
+  friends,
+  chat
+}

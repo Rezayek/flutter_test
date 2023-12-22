@@ -28,6 +28,9 @@ class _MainViewState extends State<MainView> {
               ButtonWidget(height: 7.h, width: 85.w, text: "Best Location", fontSize: 20.sp, fontWeight: FontWeight.w800, buttonColor: appColorsOrange, textColor: appColorsBlack, onTap: (value) {
                 Navigator.of(context).pushNamed("/best_location");
               },margin: EdgeInsets.only(top: 1.h, bottom: 1.h, left: 5.w, right: 5.w)),
+              ButtonWidget(height: 7.h, width: 85.w, text: "Chat APP", fontSize: 20.sp, fontWeight: FontWeight.w800, buttonColor: appColorsOrange, textColor: appColorsBlack, onTap: (value) {
+                Navigator.of(context).pushNamed("/chat");
+              },margin: EdgeInsets.only(top: 1.h, bottom: 1.h, left: 5.w, right: 5.w)),
             ],
           ),
         ),
